@@ -10,8 +10,8 @@ export class DataService{
 	constructor(private _http: Http){ }
 
 	getProject() {
-	return thid._http.get('')\
-		.map(result => this.result.json() )
+	return thid._http.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,IOT&tsyms=USD')\
+		.map(result =>this.result.json());
 
 	}
 }
